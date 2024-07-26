@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -10,8 +11,11 @@ public class PlayerController : MonoBehaviour
     bool canDash = true;
     bool isDashing = false;
     int dashCountdown;
+    int particleCountdown;
     int startingDashForce = 1;
     Rigidbody2D rb;
+    ParticleSystem ps;
+    [SerializeField] int particleDuration = 100;
     [SerializeField] int dashDuration = 30;
     [SerializeField] int jumpForce = 20;
     [SerializeField] int moveForce = 10;
@@ -19,6 +23,7 @@ public class PlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ps = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -69,13 +74,22 @@ public class PlayerController : MonoBehaviour
             v.x += moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
         }
+        if(ps.isPlaying)
+        {
 
+            if (--particleCountdown == 0)
+            {
+                ps.Stop();
+            }
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.transform.tag == "Jumpable")
         {
+            ps.Play();
+            particleCountdown = particleDuration;
             canDash = false;
             canJump = true;
             jumpsAmount = 2;
