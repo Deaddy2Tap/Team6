@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Colin_Warehouse.unity
-    guid: 8aa882a6845566541ad75c5e9eb9c6ad
+  - enabled: 1
+    path: Assets/Scenes/Start Screen.unity
+    guid: 0a75d0edd101da646929ba4217c5ac1e
   - enabled: 1
     path: Assets/Scenes/Compile.unity
     guid: bac4139e96c600d479e21e9f13ae22b5
