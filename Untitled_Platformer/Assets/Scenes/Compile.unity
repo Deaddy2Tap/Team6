@@ -917,6 +917,7 @@ Transform:
   - {fileID: 1950146419}
   - {fileID: 1661419441}
   - {fileID: 189601671}
+  - {fileID: 474368167}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &235572194
@@ -1924,10 +1925,10 @@ GameObject:
   - component: {fileID: 555053270}
   - component: {fileID: 555053269}
   - component: {fileID: 555053276}
-  - component: {fileID: 555053281}
   - component: {fileID: 555053283}
   - component: {fileID: 555053282}
   - component: {fileID: 555053284}
+  - component: {fileID: 555053285}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -2115,19 +2116,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerBulletPreFab: {fileID: 741878127313243564, guid: a1f470a443fed4048b6764626bfb7e74, type: 3}
   firePoint: {fileID: 943982010}
---- !u!114 &555053281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 555053268}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85b906c4efc167847ab0234d87e8b117, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  respawn: {fileID: 1243651814}
 --- !u!199 &555053282
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -6942,6 +6930,18 @@ MonoBehaviour:
   jumpForce: 10000
   moveForce: 4000
   extraGravity: 100
+--- !u!114 &555053285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 555053268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0301710415023142a2473633584aa72, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &577412613
 GameObject:
   m_ObjectHideFlags: 0
