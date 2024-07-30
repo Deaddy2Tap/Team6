@@ -37,6 +37,8 @@ public class EXPPlayerController : MonoBehaviour
             {
                 canJump = false;
             }
+            // Play the jump sound
+            AudioManager.instance.PlayJumpSound();
         }
 
         if (canDash && !isDashing && Input.GetKey(KeyCode.LeftShift))

@@ -9,9 +9,9 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public AudioClip JumpSFX;
-    public float JumpSFXVolume;
+    public float JumpSFXVolume = 1.0f;
 
-    [SerializeField] List<AudioSource> AudioSources;
+    private AudioSource audioSource;
 
     void Awake()
     {
@@ -24,20 +24,17 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
-
-    void Start()
-    {
-
+        
+        // Initialize the AudioSource component
+        audioSource = gameObject.AddComponent<AudioSource>();
     }
 
     private void PlaySound(AudioClip clip, float volume)
     {
-        int nextSource = 0;
-        Debug.Log(AudioSources.Count);
-        math.clamp(nextSource, 0, AudioSources.Count);
-        AudioSources[nextSource].PlayOneShot(clip, volume);
-        nextSource++;
+        if (audioSource != null && clip != null)
+        {
+            audioSource.PlayOneShot(clip, volume);
+        }
     }
 
     public void PlayJumpSound()

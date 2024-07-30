@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 using UnityEngine.Rendering;
 
@@ -20,6 +19,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int jumpForce = 20;
     [SerializeField] int moveForce = 10;
     [SerializeField] int dashForce = 20;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,7 +62,7 @@ public class PlayerController : MonoBehaviour
         {
             startingDashForce = 1;
         }
-        
+
         if (Input.GetKey(KeyCode.A))
         {
             v.x -= moveForce * startingDashForce;
@@ -74,9 +74,9 @@ public class PlayerController : MonoBehaviour
             v.x += moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
         }
-        if(ps.isPlaying)
-        {
 
+        if (ps.isPlaying)
+        {
             if (--particleCountdown == 0)
             {
                 ps.Stop();
