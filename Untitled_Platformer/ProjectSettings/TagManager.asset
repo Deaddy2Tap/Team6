@@ -49,3 +49,6 @@ TagManager:
   - name: particle layer
     uniqueID: 1357721139
     locked: 0
+  - name: player
+    uniqueID: 2455110465
+    locked: 0
