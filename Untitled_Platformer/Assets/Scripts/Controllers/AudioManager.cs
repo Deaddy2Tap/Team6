@@ -10,6 +10,10 @@ public class AudioManager : MonoBehaviour
 
     public AudioClip JumpSFX;
     public float JumpSFXVolume = 1.0f;
+    public AudioClip ShootSFX;
+    public float ShootSFXVolume = 1.0f;
+    public AudioClip DashSFX;
+    public float DashSFXVolume = 1.0f;
 
     private AudioSource audioSource;
 
@@ -40,5 +44,13 @@ public class AudioManager : MonoBehaviour
     public void PlayJumpSound()
     {
         PlaySound(JumpSFX, JumpSFXVolume);
+    }
+    public void PlayDashSound()
+    {
+        PlaySound(DashSFX, DashSFXVolume);
+    }
+    public void PlayShootSound()
+    {
+        PlaySound(ShootSFX, ShootSFXVolume);
     }
 }

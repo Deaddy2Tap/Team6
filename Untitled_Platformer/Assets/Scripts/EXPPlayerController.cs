@@ -37,7 +37,6 @@ public class EXPPlayerController : MonoBehaviour
             {
                 canJump = false;
             }
-            // Play the jump sound
             AudioManager.instance.PlayJumpSound();
         }
 
@@ -47,7 +46,8 @@ public class EXPPlayerController : MonoBehaviour
             dashCountdown = dashDuration;
             dashDirection = new Vector2(Input.GetAxisRaw("Horizontal"), 0).normalized;
             initialDashY = transform.position.y;
-            rb.velocity = new Vector2(dashDirection.x * dashForce, 0);  // Set initial dash velocity
+            rb.velocity = new Vector2(dashDirection.x * dashForce, 0);
+            AudioManager.instance.PlayDashSound();
         }
 
         if (Input.GetKey(KeyCode.A))
