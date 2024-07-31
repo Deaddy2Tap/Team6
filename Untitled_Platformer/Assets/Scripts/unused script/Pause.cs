@@ -14,22 +14,24 @@ public class Pause : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-    if (Input.GetButtonDown("Cancel"))
+        if (Input.GetButtonDown("Cancel"))
         {
-            if (IsPaused)
-                ResumeGame();
-            else
-                PauseGame();
+           IsPaused = !IsPaused;
+            PauseGame();
         }
     }
 
 
     public void PauseGame()
     {
-        Time.timeScale = 0;
-    }
-    public void ResumeGame()
-      {
-        Time.timeScale = 1;
+        if (IsPaused)
+        {
+            Time.timeScale = 0f;
         }
+        else
+        {
+            Time.timeScale = 1f;
+        }
+
+    }
 }
