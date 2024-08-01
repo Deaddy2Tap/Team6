@@ -32,7 +32,7 @@ public class PlayerController : MonoBehaviour
     {
         Vector2 v = new Vector2(0, 0);
         if (canJump && Input.GetKeyDown(KeyCode.Space))
-        {
+        { 
             canDash = true;
             v.y += jumpForce;
             rb.velocity = new Vector2(rb.velocity.x, v.y);

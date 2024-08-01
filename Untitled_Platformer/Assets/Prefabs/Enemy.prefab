@@ -105,6 +105,7 @@ MonoBehaviour:
   firePoint: {fileID: 4791713980244897845}
   projectilePrefab: {fileID: 6547483937542861402, guid: 268aac9d1f8908a47b69bc833be633f2, type: 3}
   fireRate: 1
+  lockOnTime: 2
 --- !u!1 &7981666780447476538
 GameObject:
   m_ObjectHideFlags: 0
@@ -211,3 +212,4 @@ MonoBehaviour:
   firePoint: {fileID: 4791713980244897845}
   projectilePrefab: {fileID: 6547483937542861402, guid: 268aac9d1f8908a47b69bc833be633f2, type: 3}
   fireRate: 0.5
+  lockOnTime: 2

@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EXPPlayerController : MonoBehaviour
+public class anEXPPlayerController : MonoBehaviour
 {
-   
+    public Animator animate;
     int jumpsAmount = 2;
     bool canJump = false;
     bool canDash = true;
@@ -18,7 +18,7 @@ public class EXPPlayerController : MonoBehaviour
     [SerializeField] float jumpForce = 10f;
     [SerializeField] float moveForce = 10f;
     [SerializeField] float extraGravity = 5f;  // Extra gravity to reduce floatiness
-
+  
     // Start is called before the first frame update
     void Start()
     {
@@ -28,9 +28,12 @@ public class EXPPlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
+         
         Vector2 v = new Vector2(0, 0);
         if (canJump && Input.GetKeyDown(KeyCode.Space))
         {
+            animate.SetBool("isjumping", true);
             canDash = true;
             rb.velocity = new Vector2(rb.velocity.x, jumpForce);
             jumpsAmount--;
@@ -54,11 +57,16 @@ public class EXPPlayerController : MonoBehaviour
         if (Input.GetKey(KeyCode.A))
         {
             v.x -= moveForce;
+
+
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             v.x += moveForce;
+            animate.SetFloat("speed", moveForce);
+
+
         }
 
         rb.velocity = new Vector2(v.x, rb.velocity.y);
@@ -93,6 +101,10 @@ public class EXPPlayerController : MonoBehaviour
             canDash = false;
             canJump = true;
             jumpsAmount = 2;
+            animate.SetBool("isjumping", false);
+
         }
     }
+    
 }
+
