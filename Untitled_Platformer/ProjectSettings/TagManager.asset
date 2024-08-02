@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Jumpable
   - Death
+  - enemy
   layers:
   - Default
   - TransparentFX

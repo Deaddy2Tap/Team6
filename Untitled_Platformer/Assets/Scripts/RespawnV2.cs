@@ -4,30 +4,36 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class RespawnV2 : MonoBehaviour
 {
+    public Animator animate;
     // Start is called before the first frame update
     void Start()
     {
-
+       
     }
 
     // Update is called once per frame
     void Update()
     {
-
+       
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Death")
+        if (other.gameObject.CompareTag("Death"))
         {
-            LoadScene();
-            
+            animate.SetBool("death", true);
+            StartCoroutine("waitloadScene");
+           
 
         }
     }
-    public void LoadScene()
+   
+    private IEnumerator waitloadScene()
     {
-        SceneManager.LoadScene("End");
+        yield return new
+            WaitForSecondsRealtime(1.0f);
+            SceneManager.LoadScene("End");
     }
+        
 }
 
 
