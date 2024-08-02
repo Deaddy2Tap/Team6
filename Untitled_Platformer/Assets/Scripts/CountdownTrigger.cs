@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;  // Import TextMeshPro namespace
 using System.Collections;
 using UnityEngine.SceneManagement;
+
 public class CountdownTrigger : MonoBehaviour
 {
     public float countdownTime = 60f;  // Countdown time in seconds
@@ -60,11 +61,6 @@ public class CountdownTrigger : MonoBehaviour
 
     private void CountdownEnded()
     {
-<<<<<<< Updated upstream
-        // Code to execute when the countdown ends
-        Debug.Log("Executing CountdownEnded method");  // Debug log for CountdownEnded method
-        SceneManager.LoadScene("Win");
-=======
         // Code to execute when the countdown ends  // Debug log for CountdownEnded method
         GameOver();  // Call the game over method
     }
@@ -72,7 +68,6 @@ public class CountdownTrigger : MonoBehaviour
     private void GameOver()
     {
         Debug.Log("Game Over!");  // Debug log for game over
-        // Implement your game over logic here (e.g., show a game over screen, reset the level, etc.)
->>>>>>> Stashed changes
+        SceneManager.LoadScene("End");
     }
 }
