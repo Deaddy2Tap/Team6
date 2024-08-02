@@ -18,6 +18,6 @@ public class StartScreen : MonoBehaviour
 
     public void LoadScene()
     {
-        SceneManager.LoadScene("Compile");
+        SceneManager.LoadScene("FinalLevel2");
     }
 }

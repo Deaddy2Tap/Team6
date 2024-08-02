@@ -31,7 +31,7 @@ public class Creditsa : MonoBehaviour
     private IEnumerator waitloadScene()
     {
         yield return new
-            WaitForSecondsRealtime(36.0f);
+            WaitForSecondsRealtime(25.0f);
         Application.Quit();
     }
 }

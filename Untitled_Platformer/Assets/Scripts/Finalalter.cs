@@ -19,11 +19,13 @@ public class PlayerController : MonoBehaviour
     [SerializeField] int dashDuration = 30;
     [SerializeField] int jumpForce = 20;
     [SerializeField] int moveForce = 10;
-    [SerializeField] int dashForce = 20;
+    [SerializeField] int dashForce = 200;
+    private SpriteRenderer spriterender;
 
     // Start is called before the first frame update
     void Start()
     {
+        spriterender = GetComponent<SpriteRenderer>();
         ps = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody2D>();
     }
@@ -42,12 +44,16 @@ public class PlayerController : MonoBehaviour
             {
                 canJump = false;
             }
+            AudioManager.instance.PlayJumpSound();
         }
 
         if (canDash && !isDashing && Input.GetKey(KeyCode.LeftShift))
         {
             isDashing = true;
             dashCountdown = dashDuration;
+           
+          
+            AudioManager.instance.PlayDashSound();
         }
 
         if (isDashing)
@@ -65,7 +71,7 @@ public class PlayerController : MonoBehaviour
         }
 
         if (Input.GetKey(KeyCode.A))
-        {
+        { spriterender.flipX = true;
             v.x -= moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
             animate.SetFloat("speed", Mathf.Abs(moveForce));
@@ -76,6 +82,7 @@ public class PlayerController : MonoBehaviour
             v.x += moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
             animate.SetFloat("speed", Mathf.Abs(moveForce));
+            spriterender.flipX = false;
         }
 
         if (ps.isPlaying)
