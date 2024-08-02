@@ -5,6 +5,7 @@ using UnityEngine.Rendering;
 
 public class Bullet : MonoBehaviour
 {
+    public Animator animateprojectile;
     public float speed = 20.0f;
     public Rigidbody2D bulletRb;
 

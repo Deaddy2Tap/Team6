@@ -1,0 +1,677 @@
+fileFormatVersion: 2
+guid: adb5d1a782978654897bc011e130d4b6
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 8
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_0
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1421
+        width: 20
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 048d0827fc9d5324282b1452df0bee04
+      internalID: 623138096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_1
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 1399
+        width: 22
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d2ff022e3d15a4c9dd427c66d59eef
+      internalID: 2100854970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 1403
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ef0cd7f0980bf54da035f4e6aae513b
+      internalID: 5325865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_3
+      rect:
+        serializedVersion: 2
+        x: 571
+        y: 1396
+        width: 47
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e31555498e85c4fb3f977518a12ba4
+      internalID: -833523799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_4
+      rect:
+        serializedVersion: 2
+        x: 1082
+        y: 1393
+        width: 51
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab14a5d1a7448594db89684770daf700
+      internalID: 482116182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 1003
+        width: 53
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5627b2731fd17684d973da885f035476
+      internalID: 1427850844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_6
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 988
+        width: 73
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e8342185cfdcf442baf070a0829a6a0
+      internalID: 2104458425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_7
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 987
+        width: 17
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2fec6e48f5120499819b102f483fc3
+      internalID: 726923656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_8
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 975
+        width: 104
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da22766230866c44a86b806e102c77b5
+      internalID: -1895196759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_9
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 610
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d947afa584dfb44792c808af088165d
+      internalID: 1131340353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_10
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 565
+        width: 143
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65ddbd59758bb054592bf5f8dfb6635a
+      internalID: -2112355811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_11
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 593
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d413474d5d65f5e459584ba79099250c
+      internalID: -19527732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_12
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 529
+        width: 175
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e554c4e6600ca674db460b4a3a894d43
+      internalID: 1269798010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_13
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 533
+        width: 196
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0616c39e16409c4ab69662cb070dec4
+      internalID: -356691071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_14
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 310
+        width: 79
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d1946c1a1c09647ae19cd79ca0633c
+      internalID: -416149255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_15
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 156
+        width: 184
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1350b622c31159e4781ad8133876df55
+      internalID: -1588781631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_16
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 329
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c929a133eac5e4f40851329790351600
+      internalID: -2118531813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_17
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 138
+        width: 282
+        height: 204
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b9bf0d7325bef48acf351968edaf8a
+      internalID: 296982462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_18
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 340
+        width: 44
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce7a192e15c59d4fbbfdde7f047a4ee
+      internalID: 235916135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_19
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 141
+        width: 186
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d89c637ecba8bfa41aa1e257bad18581
+      internalID: -2007788325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_20
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 295
+        width: 47
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d43354b4020a844aab4c42cb9f0a344
+      internalID: -372455550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_21
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 169
+        width: 32
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567d0c16829340a429f190d9823425cf
+      internalID: -1115569133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_22
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 222
+        width: 41
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26da31847acf62c48a71e1b19dfcc18c
+      internalID: 709591044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_23
+      rect:
+        serializedVersion: 2
+        x: 617
+        y: 144
+        width: 36
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d070c20c65379424a84173db91133649
+      internalID: 2004500156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mierdan_Projectile_Animation (1)_24
+      rect:
+        serializedVersion: 2
+        x: 1204
+        y: 75
+        width: 38
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0bbdc26c39cf244eb7081e7f202193e
+      internalID: 856483654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mierdan_Projectile_Animation (1)_0: 623138096
+      Mierdan_Projectile_Animation (1)_1: 2100854970
+      Mierdan_Projectile_Animation (1)_10: -2112355811
+      Mierdan_Projectile_Animation (1)_11: -19527732
+      Mierdan_Projectile_Animation (1)_12: 1269798010
+      Mierdan_Projectile_Animation (1)_13: -356691071
+      Mierdan_Projectile_Animation (1)_14: -416149255
+      Mierdan_Projectile_Animation (1)_15: -1588781631
+      Mierdan_Projectile_Animation (1)_16: -2118531813
+      Mierdan_Projectile_Animation (1)_17: 296982462
+      Mierdan_Projectile_Animation (1)_18: 235916135
+      Mierdan_Projectile_Animation (1)_19: -2007788325
+      Mierdan_Projectile_Animation (1)_2: 5325865
+      Mierdan_Projectile_Animation (1)_20: -372455550
+      Mierdan_Projectile_Animation (1)_21: -1115569133
+      Mierdan_Projectile_Animation (1)_22: 709591044
+      Mierdan_Projectile_Animation (1)_23: 2004500156
+      Mierdan_Projectile_Animation (1)_24: 856483654
+      Mierdan_Projectile_Animation (1)_3: -833523799
+      Mierdan_Projectile_Animation (1)_4: 482116182
+      Mierdan_Projectile_Animation (1)_5: 1427850844
+      Mierdan_Projectile_Animation (1)_6: 2104458425
+      Mierdan_Projectile_Animation (1)_7: 726923656
+      Mierdan_Projectile_Animation (1)_8: -1895196759
+      Mierdan_Projectile_Animation (1)_9: 1131340353
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
