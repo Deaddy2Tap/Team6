@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class PlayerController : MonoBehaviour
+public class PlayerControllerFianle : MonoBehaviour
 {
     int jumpsAmount = 2;
     bool canJump = false;

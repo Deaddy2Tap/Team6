@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-public class aPlayerController : MonoBehaviour
+public class PlayerController : MonoBehaviour
 {
-    
     public Animator animate;
     int jumpsAmount = 2;
     bool canJump = false;
@@ -27,7 +26,6 @@ public class aPlayerController : MonoBehaviour
     {
         ps = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody2D>();
-        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -35,8 +33,7 @@ public class aPlayerController : MonoBehaviour
     {
         Vector2 v = new Vector2(0, 0);
         if (canJump && Input.GetKeyDown(KeyCode.Space))
-        {
-            animate.SetBool("isjumping", true);
+        { 
             canDash = true;
             v.y += jumpForce;
             rb.velocity = new Vector2(rb.velocity.x, v.y);
@@ -45,14 +42,12 @@ public class aPlayerController : MonoBehaviour
             {
                 canJump = false;
             }
-            AudioManager.instance.PlayJumpSound();
         }
 
         if (canDash && !isDashing && Input.GetKey(KeyCode.LeftShift))
         {
             isDashing = true;
             dashCountdown = dashDuration;
-            AudioManager.instance.PlayDashSound();
         }
 
         if (isDashing)
@@ -71,18 +66,16 @@ public class aPlayerController : MonoBehaviour
 
         if (Input.GetKey(KeyCode.A))
         {
-           
-                  
             v.x -= moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
-            animate.SetFloat("speed",Mathf.Abs(moveForce));
+            animate.SetFloat("speed", Mathf.Abs(moveForce));
         }
 
         if (Input.GetKey(KeyCode.D))
         {
             v.x += moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
-            animate.SetFloat("speed",Mathf.Abs(moveForce));
+            animate.SetFloat("speed", Mathf.Abs(moveForce));
         }
 
         if (ps.isPlaying)
@@ -104,8 +97,6 @@ public class aPlayerController : MonoBehaviour
             canJump = true;
             jumpsAmount = 2;
             animate.SetBool("isjumping", false);
-
         }
     }
-    
-    }
+}
