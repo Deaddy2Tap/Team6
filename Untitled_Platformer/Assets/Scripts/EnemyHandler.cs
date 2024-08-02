@@ -26,7 +26,6 @@ public class EnemyHandler : MonoBehaviour
 
         if (target == null)
         {
-            Debug.LogError("Player target not found");
         }
     }
 
@@ -38,17 +37,14 @@ public class EnemyHandler : MonoBehaviour
             transform.up = directionToTarget;
 
             targetInSight = IsTargetInSight();
-            Debug.Log("Target In Sight: " + targetInSight);
 
             if (targetInSight)
             {
                 lockOnTimer += Time.deltaTime;
-                Debug.Log("Lock-On Timer: " + lockOnTimer);
             }
             else
             {
                 lockOnTimer = 0f; // Reset the timer if the target goes out of sight
-                Debug.Log("Lock-On Timer reset");
             }
 
             if (lockOnTimer >= lockOnTime && Time.time >= nextFireTime)
@@ -70,24 +66,18 @@ public class EnemyHandler : MonoBehaviour
 
             if (hit.collider == null)
             {
-                Debug.DrawRay(transform.position, directionToTarget.normalized * distanceToTarget, Color.red);
-                Debug.Log("No obstacle detected, target in sight. Direction: " + directionToTarget + ", Distance: " + distanceToTarget);
                 return true;
             }
             else
             {
-                Debug.DrawRay(transform.position, directionToTarget.normalized * distanceToTarget, Color.green);
-                Debug.Log("Obstacle detected, target not in sight. Hit: " + hit.collider.name + ", Direction: " + directionToTarget + ", Distance: " + distanceToTarget);
                 return false;
             }
         }
-        Debug.Log("Target out of detection range. Distance: " + distanceToTarget);
         return false;
     }
 
     void Shoot()
     {
-        Debug.Log("Shooting at target");
         GameObject projectile = Instantiate(projectilePrefab, firePoint.position, firePoint.rotation);
     }
 }

@@ -6,34 +6,37 @@ public class CountdownTrigger : MonoBehaviour
 {
     public float countdownTime = 60f;  // Countdown time in seconds
     public TextMeshProUGUI countdownText;  // Reference to the TextMeshProUGUI component to display the countdown
+    public GameObject winConditionTrigger; // Reference to the win condition trigger GameObject
 
     private bool isCountingDown = false;
 
     private void Start()
     {
-        Debug.Log("CountdownTrigger script started");  // Debug log for script start
+        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("Trigger Entered by: " + other.name);  // Debug log for entering the trigger
 
         if (other.CompareTag("Player") && !isCountingDown)
         {
-            Debug.Log("Player entered the trigger");  // Debug log for player entering the trigger
             StartCoroutine(StartCountdown());
         }
         else
         {
-            Debug.Log("Entered by non-player or already counting down");
+
         }
     }
 
     private IEnumerator StartCountdown()
     {
-        Debug.Log("Countdown started");  // Debug log for countdown start
         isCountingDown = true;
         float remainingTime = countdownTime;
+
+        if (winConditionTrigger != null)
+        {
+            winConditionTrigger.SetActive(true); // Activate the win condition trigger
+        }
 
         while (remainingTime > 0)
         {
@@ -41,9 +44,6 @@ public class CountdownTrigger : MonoBehaviour
             {
                 countdownText.text = remainingTime.ToString("F2");  // Display remaining time with 2 decimal places
             }
-
-            Debug.Log($"Time remaining: {remainingTime} seconds");  // Debug log for remaining time
-
             yield return new WaitForSeconds(1f);
             remainingTime -= 1f;
         }
@@ -53,16 +53,26 @@ public class CountdownTrigger : MonoBehaviour
         {
             countdownText.text = "0.00";
         }
-
-        Debug.Log("Countdown has ended");  // Debug log for countdown end
+  // Debug log for countdown end
         CountdownEnded();
         isCountingDown = false;
     }
 
     private void CountdownEnded()
     {
+<<<<<<< Updated upstream
         // Code to execute when the countdown ends
         Debug.Log("Executing CountdownEnded method");  // Debug log for CountdownEnded method
         SceneManager.LoadScene("Win");
+=======
+        // Code to execute when the countdown ends  // Debug log for CountdownEnded method
+        GameOver();  // Call the game over method
+    }
+
+    private void GameOver()
+    {
+        Debug.Log("Game Over!");  // Debug log for game over
+        // Implement your game over logic here (e.g., show a game over screen, reset the level, etc.)
+>>>>>>> Stashed changes
     }
 }
