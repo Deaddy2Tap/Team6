@@ -16,6 +16,7 @@ public class aPlayerController : MonoBehaviour
     int startingDashForce = 1;
     Rigidbody2D rb;
     ParticleSystem ps;
+    SpriteRenderer sr;
     [SerializeField] int particleDuration = 100;
     [SerializeField] int dashDuration = 30;
     [SerializeField] int jumpForce = 20;
@@ -27,7 +28,7 @@ public class aPlayerController : MonoBehaviour
     {
         ps = GetComponentInChildren<ParticleSystem>();
         rb = GetComponent<Rigidbody2D>();
-        SpriteRenderer sr = gameObject.GetComponent<SpriteRenderer>();
+        sr = gameObject.GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -75,7 +76,6 @@ public class aPlayerController : MonoBehaviour
                   
             v.x -= moveForce * startingDashForce;
             rb.velocity = new Vector2(v.x, rb.velocity.y);
-            animate.SetFloat("speed",Mathf.Abs(moveForce));
         }
 
         if (Input.GetKey(KeyCode.D))
