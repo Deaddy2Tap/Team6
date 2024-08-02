@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;  // Import TextMeshPro namespace
 using System.Collections;
-
+using UnityEngine.SceneManagement;
 public class CountdownTrigger : MonoBehaviour
 {
     public float countdownTime = 60f;  // Countdown time in seconds
@@ -63,5 +63,6 @@ public class CountdownTrigger : MonoBehaviour
     {
         // Code to execute when the countdown ends
         Debug.Log("Executing CountdownEnded method");  // Debug log for CountdownEnded method
+        SceneManager.LoadScene("Win");
     }
 }
